@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portofolio Arjuna Dirgantara, lulusan Teknik Jaringan Komputer dan Telekomunikasi.">
+  <meta name="author" content="Arjuna Dirgantara">
+  <meta name="theme-color" content="#f5f8ff" id="theme-color">
+  <title>Arjuna Dirgantara | Portofolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%232568ef'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='29' font-weight='700' fill='white'%3EAD%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('arjuna-theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme === 'dark' || savedTheme === 'light'
+          ? savedTheme
+          : (systemDark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+<header class="header" id="top">
+  <nav class="nav wrap" aria-label="Navigasi utama">
+    <a class="brand" href="#home" aria-label="Beranda Arjuna">Arjuna<span>.</span></a>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="#about">Tentang</a></li><li><a href="#skills">Keahlian</a></li><li><a href="#projects">Proyek</a></li><li><a href="#education">Pendidikan</a></li><li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="theme" id="theme" type="button" aria-label="Aktifkan mode gelap"><span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span></button>
+      <button class="menu" id="menu" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-list"><i></i><i></i><i></i></button>
+    </div>
+  </nav>
+</header>
+<main id="main">
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="portrait-wrap reveal visible">
+      <div class="portrait-glow"></div>
+      <img class="portrait" src="assets/foto-arjuna.jpg" alt="Foto profil Arjuna Dirgantara" width="718" height="719">
+      <div class="mini-card"><b>Selalu Belajar</b><span>Terus berkembang</span></div>
+    </div>
+    <div class="hero-copy reveal visible">
+      <p class="kicker">Halo, saya</p>
+      <h1>Arjuna <span>Dirgantara</span></h1>
+      <p class="lead">Lulusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki minat pada <b>Networking</b>, <b>IT Support</b>, dan <b>Web Development</b>.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Lihat Proyek <span>→</span></a><a class="btn secondary" href="#contact">Hubungi Saya <span>→</span></a></div>
+    </div>
+    <aside class="quick reveal visible" aria-label="Ringkasan portofolio">
+      <div><span class="qicon blue">▰</span><p><b>3+</b><small>Proyek Simulasi</small></p></div>
+      <div><span class="qicon green">◆</span><p><b>2+</b><small>Tahun Belajar</small></p></div>
+      <div><span class="qicon orange">⚡</span><p><b>5+</b><small>Keahlian Dasar</small></p></div>
+    </aside>
+  </div>
+</section>
+<section class="section" id="about"><div class="wrap reveal"><div class="heading"><span>Profil Singkat</span><h2>Tentang Saya</h2></div><div class="panel about"><div class="section-icon">人</div><div><p>Saya adalah Arjuna Dirgantara, lulusan SMK Tunas Harapan jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT). Saya memiliki ketertarikan pada instalasi jaringan komputer, konfigurasi perangkat jaringan, troubleshooting komputer, serta pengembangan website sederhana.</p><p>Saya senang mempelajari teknologi baru dan terus meningkatkan kemampuan di bidang IT. Portofolio ini dibuat sebagai media pembelajaran dan menampilkan proyek simulasi untuk tugas sekolah.</p></div></div></div></section>
+<section class="section tint" id="skills"><div class="wrap reveal"><div class="heading"><span>Kemampuan Dasar</span><h2>Keahlian</h2></div><div class="skill-grid">
+<article class="panel skill"><i>⌘</i><h3>Instalasi Jaringan LAN</h3><p>Pemasangan kabel, topologi, dan pengujian koneksi jaringan lokal.</p></article>
+<article class="panel skill"><i>⌁</i><h3>Mikrotik Dasar</h3><p>Konfigurasi IP address, DHCP, firewall, dan hotspot sederhana.</p></article>
+<article class="panel skill"><i>⚙</i><h3>Troubleshooting Komputer</h3><p>Pemeriksaan awal perangkat keras, sistem operasi, dan konektivitas.</p></article>
+<article class="panel skill"><i>&lt;/&gt;</i><h3>HTML dan CSS</h3><p>Membuat halaman web terstruktur, responsif, dan mudah digunakan.</p></article>
+<article class="panel skill"><i>JS</i><h3>JavaScript Dasar</h3><p>Menambahkan navigasi mobile, tema, dan interaksi halaman.</p></article>
+<article class="panel skill"><i>▦</i><h3>Microsoft Office</h3><p>Menggunakan Word, Excel, dan PowerPoint untuk tugas dan dokumentasi.</p></article>
+</div></div></section>
+<section class="section" id="projects"><div class="wrap reveal"><div class="heading"><span>Karya Pembelajaran</span><h2>Proyek Simulasi</h2><p>Seluruh proyek berikut bersifat fiktif dan dibuat sebagai contoh pembelajaran.</p></div><div class="project-grid">
+<article class="panel project"><div class="thumb network" aria-hidden="true"><div class="router"><i></i><i></i><i></i><b></b></div><span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><svg viewBox="0 0 320 180"><path d="M160 92 C110 55 82 55 46 75M160 92 C214 42 250 50 278 75M160 92 C140 132 95 140 57 128M160 92 C195 135 243 140 280 123"/></svg><em>NETWORK // 01</em></div><div class="project-body"><span class="badge">Simulasi</span><h3>Sistem Hotspot Sekolah</h3><p>Rancangan hotspot berbasis Mikrotik untuk mendukung akses internet di lingkungan sekolah.</p><ul><li>Mikrotik</li><li>Networking</li></ul></div></article>
+<article class="panel project"><div class="thumb website" aria-hidden="true"><div class="browser"><div class="dots"><i></i><i></i><i></i></div><div class="webhero"><b></b><span></span><span></span></div><div class="webcards"><i></i><i></i><i></i></div></div><em>WEB // 02</em></div><div class="project-body"><span class="badge">Simulasi</span><h3>Website Profil Sekolah</h3><p>Website profil sekolah yang informatif, responsif, dan mudah digunakan pada berbagai perangkat.</p><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div></article>
+<article class="panel project"><div class="thumb monitor" aria-hidden="true"><div class="dash"><div class="side"></div><div class="chart"><i style="--h:42%"></i><i style="--h:70%"></i><i style="--h:54%"></i><i style="--h:88%"></i><i style="--h:66%"></i></div><div class="pulse"><b></b><span></span></div></div><em>MONITOR // 03</em></div><div class="project-body"><span class="badge">Simulasi</span><h3>Monitoring Laboratorium</h3><p>Konsep dashboard sederhana untuk mencatat status perangkat komputer di laboratorium sekolah.</p><ul><li>Dashboard</li><li>IT Support</li></ul></div></article>
+</div></div></section>
+<section class="section tint" id="education"><div class="wrap reveal"><div class="heading"><span>Riwayat Akademik</span><h2>Pendidikan</h2></div><article class="panel education"><div class="edu-dot">⌂</div><div><span>Pendidikan Terakhir</span><h3>SMK Tunas Harapan</h3><p>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</p></div></article></div></section>
+<section class="section" id="contact"><div class="wrap reveal"><div class="contact panel"><div><span class="kicker">Mari Terhubung</span><h2>Kontak</h2><p>Silakan hubungi saya untuk berdiskusi mengenai pembelajaran, tugas, atau teknologi.</p></div><div class="contact-list"><a href="mailto:arjuna.dirgantara@example.com"><i>✉</i><span><small>Email</small>arjuna.dirgantara@example.com</span></a><a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i>⌘</i><span><small>GitHub</small>Tambahkan akun GitHub Anda</span></a></div></div></div></section>
+</main>
+<footer><div class="wrap"><p>© <span id="year">2026</span> Arjuna Dirgantara.</p><a href="#home">Kembali ke atas ↑</a></div></footer>
+<script src="script.js" defer></script>
+</body></html>

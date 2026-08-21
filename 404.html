@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#050915">
+  <title>Halaman Tidak Ditemukan</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-width:320px;min-height:100vh;display:grid;place-items:center;padding:24px;background:#050915;color:#fff;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}main{max-width:560px}h1{margin:0;font-size:clamp(3rem,12vw,6rem);line-height:1}p{color:#aab5cc}a{display:inline-block;margin-top:12px;padding:11px 18px;border-radius:12px;background:#4c8cff;color:#fff;font-weight:750;text-decoration:none}a:focus-visible{outline:3px solid #f59e0b;outline-offset:4px}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>404</h1>
+    <p>Halaman yang dibuka tidak ditemukan.</p>
+    <a id="home-link" href="./">Kembali ke beranda</a>
+  </main>
+  <script>
+    (() => {
+      const link = document.getElementById("home-link");
+      const projectSite = location.hostname.endsWith(".github.io");
+      const firstPath = location.pathname.split("/").filter(Boolean)[0];
+      link.href = projectSite && firstPath
+        ? `${location.origin}/${firstPath}/`
+        : `${location.origin}/`;
+    })();
+  </script>
+</body>
+</html>
